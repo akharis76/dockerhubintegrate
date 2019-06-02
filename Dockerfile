@@ -4,7 +4,8 @@ apt-get -y install apache2 \
 php5 \
 php5-mysql \
 mysql-client \
-wget
+wget \
+curl
 RUN wget http://wordpress.org/latest.tar.gz && \
 tar xzvf latest.tar.gz && \
 cp -R ./wordpress/* /var/www/html && \
