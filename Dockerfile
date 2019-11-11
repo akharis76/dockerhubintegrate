@@ -11,5 +11,5 @@ tar xzvf latest.tar.gz && \
 cp -R ./wordpress/* /var/www/html && \
 rm /var/www/html/index.html
 RUN chown -R www-data:www-data /var/www/html
-EXPOSE 80
+EXPOSE 8080
 CMD ["/bin/bash"]
