@@ -9,6 +9,7 @@ curl
 RUN wget http://wordpress.org/latest.tar.gz && \
 tar xzvf latest.tar.gz && \
 cp -R ./wordpress/* /var/www/html && \
+cat /var/www/html/index.html \
 rm /var/www/html/index.html
 RUN chown -R www-data:www-data /var/www/html
 EXPOSE 8080
